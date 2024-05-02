@@ -74,6 +74,7 @@ const userSchema = new Schema(
   }
 );
 
+
 /*
   index is mostly used for Searching operations 
 */
