@@ -75,8 +75,7 @@ const userSchema = new Schema(
 );
 
 /*
-index is mostly used for Searching operations 
-
+  index is mostly used for Searching operations 
 */
 userSchema.index({ name: "text" });
 module.exports = mongoose.model("User", userSchema);
