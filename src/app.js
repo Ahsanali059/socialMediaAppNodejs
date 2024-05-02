@@ -4,6 +4,8 @@ const database = require("./config/database")
 const {PORT,DATABASE_URL} = require("./config/serverConfig");
 const Database = require("./config/database");
 
+const {PORT} = require("./config/serverConfig")
+
 const app = express();
 const db = new Database(DATABASE_URL,{
     useNewUrlParser: true,
