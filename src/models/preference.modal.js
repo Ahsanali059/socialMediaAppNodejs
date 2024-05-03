@@ -15,4 +15,4 @@ const preferenceSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("Preference", 	Schema);
+module.exports = mongoose.model("Preference",preferenceSchema);
