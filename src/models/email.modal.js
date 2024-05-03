@@ -21,7 +21,7 @@ const emailSchema = new mongoose.Schema({
   createdAt: {
     type: Date,
     default: Date.now,
-    expires: 1800, // 30 minutes
+    expires: 1800, // expire in 30 minutes
   },
 });
 
