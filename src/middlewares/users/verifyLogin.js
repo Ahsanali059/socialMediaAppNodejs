@@ -82,7 +82,7 @@ const verifyLogin = async (req, res) => {
     if (!suspiciousLogin || suspiciousLogin.email !== email) {
       return res.status(400).json({ message: "Invalid verification link" });
     }
-
+    //     
     const newContextData = new UserContext({
       user: suspiciousLogin.user,
       email: suspiciousLogin.email,
