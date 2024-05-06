@@ -4,9 +4,11 @@ const User = require("../../models/user.modal");
 const EmailVerification = require("../../models/email.modal");
 const { query, validationResult } = require("express-validator");
 const { verifyEmailHTML } = require("../../utils/emailTemplates");
+const {CLIENT_URL,EMAIL_SERVICE} = require("../../config/serverConfig")
 
-const CLIENT_URL = process.env.CLIENT_URL;
-const EMAIL_SERVICE = process.env.EMAIL_SERVICE;
+var CLIENT_URL = CLIENT_URL;
+var EMAIL_SERVICE = EMAIL_SERVICE;
+
 
 
 const verifyEmailValidation = [
