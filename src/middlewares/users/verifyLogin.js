@@ -81,8 +81,7 @@ const verifyLogin = async (req, res) => {
 
     if (!suspiciousLogin || suspiciousLogin.email !== email) {
       return res.status(400).json({ message: "Invalid verification link" });
-    }
-    //     
+    } 
     const newContextData = new UserContext({
       user: suspiciousLogin.user,
       email: suspiciousLogin.email,
@@ -97,6 +96,7 @@ const verifyLogin = async (req, res) => {
     });
 
     await newContextData.save();
+    
     await SuspiciousLogin.findOneAndUpdate(
       { _id: { $eq: id } },
       { $set: { isTrusted: true, isBlocked: false } },
