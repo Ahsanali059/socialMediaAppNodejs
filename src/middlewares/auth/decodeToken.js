@@ -1,3 +1,8 @@
+/**
+ *
+ * @type {{JsonWebTokenError: (function(*, *): void)|{}, TokenExpiredError: (function(*, *): void)|{}, sign: (function(*, *, *, *): (*|undefined|undefined))|{}, verify: (function(*, *, *, *): (*))|{}, decode: (function(*, *): (null|{payload: *, signature: *, header: *}))|{}, NotBeforeError: (function(*, *): void)|{}}|{decode?: (function(*, *): (null|{payload: *, signature: *, header: *}))|{}, verify?: (function(*, *, *, *): (*))|{}, sign?: (function(*, *, *, *): (*|undefined|undefined))|{}, JsonWebTokenError?: (function(*, *): void)|{}, NotBeforeError?: (function(*, *): void)|{}, TokenExpiredError?: (function(*, *): void)|{}}}
+ */
+
 const jwt = require("jsonwebtoken");
 
 /**

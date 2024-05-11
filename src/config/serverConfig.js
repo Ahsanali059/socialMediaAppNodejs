@@ -1,3 +1,7 @@
+/**
+ *
+ * @type {{DotenvParseOutput: DotenvParseOutput, populate(processEnv: DotenvPopulateInput, parsed: DotenvPopulateInput, options?: DotenvConfigOptions): void, DotenvConfigOptions: DotenvConfigOptions, DotenvConfigOutput: DotenvConfigOutput, DotenvPopulateInput: DotenvPopulateInput, parse<T=DotenvParseOutput extends DotenvParseOutput>(src: (string | Buffer)): T, decrypt(encrypted: string, keyStr: string): string, config(options?: DotenvConfigOptions): DotenvConfigOutput, configDotenv(options?: DotenvConfigOptions): DotenvConfigOutput, DotenvPopulateOptions: DotenvPopulateOptions}}
+ */
 const dotenv = require("dotenv")
 dotenv.config();
 
